@@ -137,3 +137,31 @@ form textarea {
   margin-top: 5px; /* space between text and underline */
 }
 
+.facebook-link {
+  background-color: #4267B2; /* Facebook blue */
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.facebook-link:hover {
+  background-color: #365899;
+}
+
+.btn.contact-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FFD700; /* bright yellow for visibility */
+  color: #000; /* black text for contrast */
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 5px; /* spacing between buttons */
+}
+
+.btn.contact-link:hover {
+  background-color: #FFC107; /* slightly darker yellow on hover */
+}
+
+
