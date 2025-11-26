@@ -113,3 +113,27 @@ form textarea {
   height: 120px; /* Adjust this to match your design */
   resize: vertical; /* Allows user to stretch if needed */
 }
+.rainbow-heading {
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.rainbow-heading {
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+}
+
+.rainbow-heading::after {
+  content: "";
+  display: block;
+  height: 3px; /* thickness of underline */
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  margin-top: 5px; /* space between text and underline */
+}
+
