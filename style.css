@@ -168,10 +168,16 @@ section {
   margin: auto;
 }
 @media (max-width: 768px) {
-  h1 {
-    font-size: 1.8em; /* smaller heading on mobile */
-    text-align: center;
+  section {
+    margin-bottom: 50px;
+    padding: 15px;
   }
+
+  footer {
+    margin-top: 40px;
+    padding: 15px;
+  }
+}
 
   .btn.contact-link {
     display: block;   /* stack buttons vertically */
@@ -185,5 +191,9 @@ section {
   }
 }
 
-
+section {
+  margin-bottom: 40px; /* space between sections */
+  padding: 20px;        /* space inside each box */
+  box-sizing: border-box;
+}
 
