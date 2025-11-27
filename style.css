@@ -189,7 +189,6 @@ section {
     flex-direction: column; /* stack nav links */
     text-align: center;
   }
-}
 
 section {
   margin-bottom: 40px; /* space between sections */
