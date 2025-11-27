@@ -1,6 +1,7 @@
 /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+/* Base Styles */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -9,7 +10,7 @@ body {
   color: #fff;
 }
 
-/* Header with Logo */
+/* Header */
 header {
   background: transparent;
   text-align: center;
@@ -58,10 +59,12 @@ nav ul li a {
 /* Info Sections */
 section {
   background: rgba(0, 0, 0, 0.8);
-  padding: 2em;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 25px;
   text-align: center;
-  margin: 1em;
   border-radius: 10px;
+  box-sizing: border-box;
 }
 
 section h2 {
@@ -80,46 +83,7 @@ section ul {
   padding: 0;
 }
 
-/* Buttons */
-.btn {
-  background: #ff6600;
-  color: #fff;
-  padding: 0.5em 1em;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-/* Footer */
-footer {
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  text-align: center;
-  padding: 1em;
-}
-
-form input,
-form textarea {
-  width: 80%;
-  padding: 0.75em;
-  margin: 0.5em auto;
-  display: block;
-  font-size: 1em;
-  border-radius: 5px;
-  border: none;
-}
-
-form textarea {
-  height: 120px; /* Adjust this to match your design */
-  resize: vertical; /* Allows user to stretch if needed */
-}
-.rainbow-heading {
-  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-}
-
+/* Rainbow Headings */
 .rainbow-heading {
   background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
   -webkit-background-clip: text;
@@ -132,67 +96,106 @@ form textarea {
 .rainbow-heading::after {
   content: "";
   display: block;
-  height: 3px; /* thickness of underline */
+  height: 3px;
   background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-  margin-top: 5px; /* space between text and underline */
+  margin-top: 5px;
+}
+
+/* Buttons */
+.btn {
+  background: #ff6600;
+  color: #fff;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn.contact-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FFD700;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 10px 5px;
+  text-align: center;
+}
+
+.btn.contact-link:hover {
+  background-color: #FFC107;
 }
 
 .facebook-link {
-  background-color: #4267B2; /* Facebook blue */
+  background-color: #4267B2;
   color: #fff;
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
   font-weight: bold;
 }
+
 .facebook-link:hover {
   background-color: #365899;
 }
 
-.btn.contact-link {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #FFD700; /* bright yellow for visibility */
-  color: #000; /* black text for contrast */
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  margin: 5px; /* spacing between buttons */
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  margin-top: 40px;
 }
 
-.btn.contact-link:hover {
-  background-color: #FFC107; /* slightly darker yellow on hover */
+/* Form Styles */
+form input,
+form textarea {
+  width: 80%;
+  padding: 0.75em;
+  margin: 0.5em auto;
+  display: block;
+  font-size: 1em;
+  border-radius: 5px;
+  border: none;
 }
-section {
-  max-width: 90%;
-  margin: auto;
+
+form textarea {
+  height: 120px;
+  resize: vertical;
 }
+
+/* Responsive Layout */
 @media (max-width: 768px) {
   section {
-    margin-bottom: 50px;
+    max-width: 95%;
+    margin: 30px auto;
     padding: 15px;
   }
-
-  footer {
-    margin-top: 40px;
-    padding: 15px;
-  }
-}
 
   .btn.contact-link {
-    display: block;   /* stack buttons vertically */
-    width: 100%;      /* full width buttons */
-    margin: 10px 0;   /* spacing between buttons */
+    display: block;
+    width: 100%;
+    margin: 10px 0;
   }
 
   nav ul {
-    flex-direction: column; /* stack nav links */
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  h1, h2 {
+    font-size: 1.5em;
     text-align: center;
   }
 
-section {
-  margin-bottom: 40px; /* space between sections */
-  padding: 20px;        /* space inside each box */
-  box-sizing: border-box;
+  footer {
+    padding: 15px;
+  }
 }
-
