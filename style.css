@@ -163,5 +163,27 @@ form textarea {
 .btn.contact-link:hover {
   background-color: #FFC107; /* slightly darker yellow on hover */
 }
+section {
+  max-width: 90%;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8em; /* smaller heading on mobile */
+    text-align: center;
+  }
+
+  .btn.contact-link {
+    display: block;   /* stack buttons vertically */
+    width: 100%;      /* full width buttons */
+    margin: 10px 0;   /* spacing between buttons */
+  }
+
+  nav ul {
+    flex-direction: column; /* stack nav links */
+    text-align: center;
+  }
+}
+
 
 
