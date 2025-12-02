@@ -164,12 +164,15 @@ form textarea {
   background-color: #FFC107; /* slightly darker yellow on hover */
 }
 .parallax {
-  background-image: url("stickers-bg.jpg");
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  background: url("background.jpg") center / cover no-repeat;
 }
-
 
