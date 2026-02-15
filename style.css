@@ -145,3 +145,59 @@ form textarea {
 .btn.contact-link:hover {
   background-color: #FFC107; /* slightly darker yellow on hover */
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-top: 40px;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 8px;
+}
+
+ul {
+    margin-top: 10px;
+    line-height: 1.8;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.doc-home-btn {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.doc-home-btn .btn {
+  font-size: 1.2em;
+  padding: 0.7em 1.5em;
+}
