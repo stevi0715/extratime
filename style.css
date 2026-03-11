@@ -201,7 +201,6 @@ a:hover {
   font-size: 1.2em;
   padding: 0.7em 1.5em;
 }
-
 .pricing-table {
   width: 100%;
   max-width: 900px;   /* reduces how wide the table can get */
@@ -233,4 +232,4 @@ a:hover {
 .pricing-title {
   text-align: center;
   color: #f2f2f2;
-}
+
