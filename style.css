@@ -201,3 +201,36 @@ a:hover {
   font-size: 1.2em;
   padding: 0.7em 1.5em;
 }
+
+.pricing-table {
+  width: 100%;
+  max-width: 900px;   /* reduces how wide the table can get */
+  margin: 20px auto;  /* centres the table */
+  border-collapse: collapse;
+  font-size: 1rem;
+  background: linear-gradient(to right, #080808, #0a0a0a, #070707);
+}
+
+
+.pricing-table th,
+.pricing-table td {
+  border: 1px solid #080000;
+  padding: 10px;
+  text-align: center;
+  background: rgba(238, 232, 232, 0.4);
+}
+
+.pricing-table th {
+  font-weight: bold;
+  background: rgba(179, 39, 39, 0.6);
+}
+
+.pricing-table small {
+  font-size: 0.8rem;
+  color: #050505;
+}
+
+.pricing-title {
+  text-align: center;
+  color: #f2f2f2;
+}
